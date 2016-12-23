@@ -1,0 +1,23 @@
+{
+    "name": "Vpm3/Html2Pdf",
+    "description": "calls aws-lambda through aws-gateway-api to create pdf from html",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Thomas C Mobley",
+            "email": "thomascmobley@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require-dev": {
+        "phpunit/phpunit": "4.0.*"
+    },
+    "require": {
+        "php": ">=5.2.0"
+    },
+    "autoload":{
+        "psr-4": {
+            "Vpm3\\Html2Pdf\\": "src/"
+        }
+    }
+}
