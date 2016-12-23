@@ -1,5 +1,5 @@
 {
-    "name": "ThomasCMobley/Html2Pdf",
+    "name": "thomascmobley/html2pdf",
     "description": "calls aws-lambda through aws-gateway-api to create pdf from html",
     "license": "MIT",
     "authors": [
