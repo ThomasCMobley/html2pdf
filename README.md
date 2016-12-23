@@ -1,1 +1,1 @@
-TODO: write a readme
+This package sends a curl containing various data to AWS API Gateway which passes it on to an AWS Lambda function to transform a html (raw or url) to pdf and store it to the indicated s3 bucket/filepath/filename.
