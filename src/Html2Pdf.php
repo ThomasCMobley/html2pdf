@@ -1,29 +1,19 @@
-<?php namespace Vpm3\Html2Pdf;
+<?php 
 
 /*
- Below are the two methods of calling html2pdf
-    http://wkhtmltopdf.org/usage/wkhtmltopdf.txt.  These must be camelCase 
-    $html2pdf->setOption('footerCenter', 'Page [page] of [toPage]');
-    $html2pdf->setOption('dpi', 72);
-    $html2pdf->setBucket('tclassifieds');
-    $html2pdf->setData($data);
-    $html2pdf->setFilepath('files');
-    $html2pdf->setFileName('my_file_name');
-    $html2pdf->setFontLinks(['https://fonts.googleapis.com/css?family=Lora']);
-    $html2pdf->setDomain('http://vstage.thomascmobley.com');
-    $html2pdf->html2pdf();
-can also be called as follows
+called as follows
+    $html2pdf = new Html2Pdf();
     $parameters = [
-        'bucket'=>'tclassifieds',
-        'filepath'=>'files',
-        'filename'=>'my_file_name',
+        'apiurl'=>'https://yofd0pxi8l.execute-api.us-west-2.amazonaws.com/html2pdf/lambdapdf',
+        'apikey'=>'47YexK2GHWapTiVm2aSGyalRylF5pvAkads7fgSJ',
         'data'=>$data,
+        'bucket'=>'tclassifieds',
         'fontlinks'=>['https://fonts.googleapis.com/css?family=Lora'],
         'domain'=>'http://vstage.thomascmobley.com',
         'options'=>['footerCenter'=>'Page [page] of [toPage]', 'dpi'=>72]
     ];
-    $html2pdf->html2pdf($parameters);
-Note:   bucket, data, filepath and filename are required, all others are optional
+    $return = $html2pdf->html2pdf($parameters);
+Note:   apiurl, apikey, filepath and data are required, all others are optional
         fontlinks and domain are only used for raw html
 */
 
