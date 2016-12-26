@@ -16,7 +16,7 @@
         "php": ">=5.2.0"
     },
     "autoload":{
-        "psr-4": {
+        "psr-0": {
             "ThomasCMobley\\Html2Pdf\\": "src/"
         }
     }
