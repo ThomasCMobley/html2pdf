@@ -1,0 +1,17 @@
+{
+    "name": "thomascmobley/html2pdf",
+    "description": "calls aws-lambda through aws-gateway-api to create pdf from html",
+    "license": "",
+    "authors": [
+        {
+            "name": "Thomas C Mobley",
+            "email": "thomascmobley@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload":{
+        "psr-0": {
+            "ThomasCMobley_": "src/"
+        }
+    }
+}
