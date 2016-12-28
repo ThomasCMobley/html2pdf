@@ -193,7 +193,7 @@ class ThomasCMobley_Html2Pdf {
         if ($parameters !== null){
             $this->setParameters($parameters);
         } else {
-            throw Exception('Please enter your parameters');
+            throw new Exception('Please enter your parameters');
         }
         if (!($err = $this->checkRequired())){
             throw new Exception($err);
